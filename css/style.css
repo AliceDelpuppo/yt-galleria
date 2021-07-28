@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 18px;
+  }
+}
+.header .header-brand {
+  color: #FFFFFF;
+  font-size: 48px;
+}
+.header .header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .header .header-navbar ul {
+    display: none;
+  }
+}
+.header .header-navbar ul li {
+  margin: 0 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.header .header-navbar ul li .active {
+  color: #20C997;
+}
+.header .header-navbar ul li a:hover {
+  color: #20C997;
+}
+.header .header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header .header-social-media ul {
+    display: none;
+  }
+}
+.header .header-social-media ul li {
+  margin: 0 16px;
+}
+.header .header-social-media ul li a:hover {
+  color: #FFFFFF;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 24px 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery .gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+@media (max-width: 425px) {
+  .gallery .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+}
+.gallery .gallery-card .gallery-card-title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.gallery .gallery-card .gallery-card-button {
+  padding: 10px 32px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery .gallery-card .gallery-card-button:hover {
+  background-color: #FFFFFF;
+  color: #000;
+}
+.gallery #card-1 {
+  background-image: url("../image/animais.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/animais.jpg");
+}
+.gallery #card-2 {
+  background-image: url("../image/arquitetura.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/arquitetura.jpg");
+}
+.gallery #card-3 {
+  background-image: url("../image/cidade.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/cidade.jpg");
+}
+.gallery #card-4 {
+  background-image: url("../image/decoracao.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/decoracao.jpg");
+}
+.gallery #card-5 {
+  background-image: url("../image/esportes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/esportes.jpg");
+}
+.gallery #card-6 {
+  background-image: url("../image/natureza.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/natureza.jpg");
+}
+.gallery #card-7 {
+  background-image: url("../image/paisagem.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/paisagem.jpg");
+}
+.gallery #card-8 {
+  background-image: url("../image/pessoas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/pessoas.jpg");
+}
+.gallery #card-9 {
+  background-image: url("../image/refeicoes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/refeicoes.jpg");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 32px;
+}
+footer span {
+  font-weight: bold;
+  color: #20C997;
+}
+
+/*# sourceMappingURL=style.css.map */

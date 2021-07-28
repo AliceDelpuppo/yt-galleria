@@ -1,0 +1,186 @@
+@use '_variables.scss';
+@use '_mixins.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$background-color;
+    color: variables.$text-color;
+
+    a {
+        color: variables.$text-color;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    @include mixins.container;
+
+    @include mixins.mobile{
+        padding: 18px;
+    }
+
+    // &-brand --> é o mesmo que .header-brand
+    .header-brand{
+        color: variables.$primary-color;
+        font-size: 48px;
+    }
+
+    .header-navbar{
+        ul{
+            height: 100%;
+            @include mixins.flex-center;
+
+            @include mixins.mobile{
+                display: none;
+            }
+
+            li {
+                margin: 0 16px;
+                text-transform: uppercase;
+                font-size: 12px;
+
+                .active {
+                    color: variables.$secundary-color;
+                }
+
+                a {
+                    &:hover {
+                        color: variables.$secundary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-social-media {
+        ul {
+            @include mixins.flex-center;
+            height: 100%;
+
+            @include mixins.mobile {
+                display: none;
+            }
+
+            li {
+                margin: 0 16px;
+
+                a {
+                    &:hover {
+                        color: variables.$primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    @include mixins.flex-center;
+    @include mixins.container;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+
+    @include mixins.mobile{
+        flex-direction: column;
+    }
+
+    .gallery-card {
+        width: 31%;
+        height: 400px;
+        margin-bottom: 4%;
+        @include mixins.flex-center;
+        flex-direction: column;
+        color: variables.$primary-color;
+
+        @include mixins.mobile{
+            width: 90%;
+            margin-bottom: 6%;
+        }
+
+        .gallery-card-title {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 16px;
+        }
+
+        .gallery-card-button {
+            padding: 10px 32px;
+            border: 2px solid variables.$primary-color;
+            color: variables.$primary-color;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &:hover {
+                background-color: variables.$primary-color;
+                color: variables.$background-color;
+            }
+        }
+    }
+
+    #card-1 {
+        @include mixins.background-image('animais.jpg');
+    }
+
+    #card-2 {
+        @include mixins.background-image('arquitetura.jpg');
+    }
+    
+    #card-3 {
+        @include mixins.background-image('cidade.jpg');
+    }
+    #card-4 {
+        @include mixins.background-image('decoracao.jpg');
+    }
+    
+    #card-5 {
+        @include mixins.background-image('esportes.jpg');
+    }
+        
+    #card-6 {
+        @include mixins.background-image('natureza.jpg');
+    }
+        
+    #card-7 {
+        @include mixins.background-image('paisagem.jpg');
+    }
+        
+    #card-8 {
+        @include mixins.background-image('pessoas.jpg');
+    }
+        
+    #card-9 {
+        @include mixins.background-image('refeicoes.jpg');
+    }
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 32px;
+
+    span {
+        font-weight: bold;
+        color: variables.$secundary-color;
+    }
+}
+
+
+
+
